@@ -11,8 +11,8 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('invertories', function (Blueprint $table) {
-            $table->id()->autoIncrement();
+        Schema::create('inventories', function (Blueprint $table) {
+            $table->id();
             $table->string('name', 45);
             $table->integer('amount');
             $table->enum('type', ['Verdura', 'Fruta', 'Proteina', 'Cereales y Legumbres'])->default('Verdura');
@@ -25,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('invertories');
+        Schema::dropIfExists('inventories');
     }
 };

@@ -11,12 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('recipes', function (Blueprint $table) {
-            $table->id()->autoIncrement();
-            $table->text('ingredient');
+        Schema::create('users', function (Blueprint $table) {
+            $table->id();
             $table->string('name', 45);
-            $table->text('description');
-            $table->foreignId('inventory_id')->constrained('inventories')->onDelete('cascade');
+            $table->string('lastname', 45);
+            $table->string('password', 27);
+            $table->foreignId('role_id')->constrained('roles')->onDelete('cascade');
             $table->timestamps();
         });
     }
@@ -26,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('recipes');
+        Schema::dropIfExists('users');
     }
 };

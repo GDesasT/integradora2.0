@@ -12,11 +12,13 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('dishes', function (Blueprint $table) {
-            $table->id()->autoIncrement();
+            $table->id();
             $table->string('name', 45);
             $table->enum('weekday', ['Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado', 'Domingo'])->default('Lunes');
             $table->text('description');
             $table->double('price', 10, 2);
+            $table->foreignId('recipe_id')->constrained('recipes')->onDelete('cascade');
+            $table->foreignId('feedback_id')->constrained('feedback')->onDelete('cascade');
             $table->timestamps();
         });
     }
