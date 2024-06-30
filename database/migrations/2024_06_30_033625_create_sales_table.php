@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('sales', function (Blueprint $table) {
             $table->id()->autoIncrement();
+            $table->foreignId('enterprices_id')->constrained('enterprices')->onDelete('cascade');
+            $table->foreignId('customers_id')->constrained('customers')->onDelete('cascade');
             $table->dateTime('date');
             $table->double('total', 10, 2);
             $table->timestamps();

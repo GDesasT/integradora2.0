@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('recipes', function (Blueprint $table) {
             $table->id()->autoIncrement();
+            $table->foreignId('invenroties_id')->constrained('inventories','id')->onDelete('cascade');
+            $table->foreignId('dishes_id')->constrained()->onDelete('cascade');
             $table->text('ingredient');
             $table->string('name', 45);
             $table->text('description');

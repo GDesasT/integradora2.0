@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('customers', function (Blueprint $table) {
             $table->id()->autoIncrement();
+            $table->foreignId('sales_id')->constrained('sales'.'id')->onDelete('cascade');
             $table->string('name', 45);
             $table->string('lastname', 45);
             $table->timestamps();
