@@ -17,6 +17,8 @@ return new class extends Migration
             $table->foreignId('customers_id')->constrained('customers')->onDelete('cascade');
             $table->dateTime('date');
             $table->double('total', 10, 2);
+            $table->foreignId('customer_id')->constrained('customers')->onDelete('cascade');
+            $table->foreignId('dish_id')->constrained('dishes')->onDelete('cascade');
             $table->timestamps();
         });
     }

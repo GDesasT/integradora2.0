@@ -11,12 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('customers', function (Blueprint $table) {
-            $table->id()->autoIncrement();
-            $table->foreignId('sales_id')->constrained('sales'.'id')->onDelete('cascade');
+        Schema::create('inventories', function (Blueprint $table) {
+            $table->id();
             $table->string('name', 45);
-            $table->string('lastname', 45);
-            $table->foreignId('enterprise_id')->constrained('enterprises')->onDelete('cascade');
+            $table->integer('amount');
+            $table->enum('type', ['Verdura', 'Fruta', 'Proteina', 'Cereales y Legumbres'])->default('Verdura');
             $table->timestamps();
         });
     }
@@ -26,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('customers');
+        Schema::dropIfExists('inventories');
     }
 };

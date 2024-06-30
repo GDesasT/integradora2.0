@@ -18,6 +18,7 @@ return new class extends Migration
             $table->text('ingredient');
             $table->string('name', 45);
             $table->text('description');
+            $table->foreignId('inventory_id')->constrained('inventories')->onDelete('cascade');
             $table->timestamps();
         });
     }
