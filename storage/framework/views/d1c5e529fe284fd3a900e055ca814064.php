@@ -1,6 +1,4 @@
-@extends('layouts.app')
-
-@section('content')
+<?php $__env->startSection('content'); ?>
     <body>
         <div
         style="height: 43px;width:auto ; margin:auto;display: flex;justify-content: space-evenly;flex-direction: column; background-color:#fff9e3">
@@ -9,7 +7,7 @@
         <div class="container-1">
             <div class="info">
                 <div class="container-logo">
-                    <img src="{{ asset('img/logo.png')}}" alt="Logo" class="logo">
+                    <img src="<?php echo e(asset('img/logo.png')); ?>" alt="Logo" class="logo">
                 </div>
                 <div class="cont-info">
                     <h1 class="info-h1">Comedor Industrial</h1>
@@ -18,4 +16,5 @@
             </div>
         </div>
     </body>
-@endsection
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\Users\tania\OneDrive\Desktop\este inte\integradora8.0\integradora2.0\resources\views/index.blade.php ENDPATH**/ ?>

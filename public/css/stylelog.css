@@ -4,9 +4,11 @@ body{
     background-image: url('../img/comedor.jpg'); 
     background-position: center;
     background-size: cover;
+    overflow: hidden;
     
 }
 .wrapper{
+    margin-top: -90px;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -14,7 +16,8 @@ body{
 }
 
 .fondito{
-    display: flex;
+
+    display: flex;  
     background-color: #1314148a;
     border-radius: 7px;
     justify-content: center;
