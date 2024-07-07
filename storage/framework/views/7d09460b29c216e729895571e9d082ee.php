@@ -1,7 +1,7 @@
-<link rel="stylesheet" href="{{ asset('css/stylelog.css') }}">
-@extends('layouts.app')
+<link rel="stylesheet" href="<?php echo e(asset('css/stylelog.css')); ?>">
 
-@section('content')
+
+<?php $__env->startSection('content'); ?>
 <body>
     <div
         style="height: 43px;width:auto ; margin:auto;display: flex;justify-content: space-evenly;flex-direction: column; background-color:#fff9e3">
@@ -33,8 +33,10 @@
           </div>
                  </div> 
     
-@endsection
+<?php $__env->stopSection(); ?>
 
-@section('style')
-@endsection
+<?php $__env->startSection('style'); ?>
+<?php $__env->stopSection(); ?>
 
+
+<?php echo $__env->make('layouts.app', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\Users\tania\OneDrive\Desktop\este inte\integradora8.0\integradora2.0\resources\views/login.blade.php ENDPATH**/ ?>
