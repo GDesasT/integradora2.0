@@ -21,7 +21,8 @@
 
             </ul>
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
+                <li class="nav-item" id=navlogin>
+                    <img src="../img/user.png" ></button>
                     <a class=" <?php echo e(request()->routeIs('login') ? 'active' : ''); ?>" href="<?php echo e(route('login')); ?>">Login</a>
                 </li>
             </ul>

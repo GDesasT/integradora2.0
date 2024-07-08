@@ -1,4 +1,9 @@
 <?php $__env->startSection('content'); ?>
+<style>
+    body{
+        overflow: hidden;
+    }
+</style>
     <div
         style="height: 80x;width:400px  ; border-radius:20px; margin:auto;display: flex;justify-content: space-evenly;flex-direction: column; background-color:#fff9e3">
         <h1 id="desayunos">Desayunos</h1>
@@ -50,7 +55,8 @@
         </button>
     </div>
     <div>
-        <button type="button" id="feedback" class="btn btn-primary">Comentarios</button>
+        <button type="button" id="feedback" class="btn btn-primary">
+            <img src="../img/messenger.png"  id="logo">Comentarios</button>
     </div>
     </div>
 <?php $__env->stopSection(); ?>

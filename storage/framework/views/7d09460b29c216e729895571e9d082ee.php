@@ -7,7 +7,6 @@
         style="height: 43px;width:auto ; margin:auto;display: flex;justify-content: space-evenly;flex-direction: column; background-color:#fff9e3">
         <p></p>
 
-
     </div>
 <div class="wrapper">
           <div class="fondito">

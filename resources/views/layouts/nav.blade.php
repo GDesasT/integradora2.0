@@ -21,7 +21,8 @@
 
             </ul>
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
+                <li class="nav-item" id=navlogin>
+                    <img src="../img/user.png" ></button>
                     <a class=" {{ request()->routeIs('login') ? 'active' : '' }}" href="{{ route('login') }}">Login</a>
                 </li>
             </ul>
