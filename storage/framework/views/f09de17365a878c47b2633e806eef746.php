@@ -1,10 +1,14 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">Comedor Industrial</a>
+<nav class="navbar navbar-expand-lg "  style="background-color: #fff9e3; ">
+ 
+    <div class="container-fluid"style="margin-bottom: -50px;">
+        <img src="../img/logo.jpeg"  id="logo">
+        <a class="navbar-brand nav-item" style="font-size:25px font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; href="#>Comedor Industrial</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
+            
+        
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link <?php echo e(request()->routeIs('home') ? 'active' : ''); ?>" href="<?php echo e(route('home')); ?>">Home</a>
@@ -12,14 +16,12 @@
                 <li class="nav-item">
                     <a class="nav-link <?php echo e(request()->routeIs('menu') ? 'active' : ''); ?>" href="<?php echo e(route('menu')); ?>">Menu</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link <?php echo e(request()->routeIs('login') ? 'active' : ''); ?>" href="<?php echo e(route('login')); ?>">Login</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link <?php echo e(request()->routeIs('feedback') ? 'active' : ''); ?>" href="<?php echo e(route('feedback')); ?>">Feedback</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Comedor Industrial</a>
+
+            </ul>
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item" id=navlogin>
+                    
+                    <a class="btn-login <?php echo e(request()->routeIs('login') ? 'active' : ''); ?>" href="<?php echo e(route('login')); ?>"><img src="../img/user.png" >Login</a>
                 </li>
             </ul>
         </div>

@@ -17,6 +17,9 @@ html,body{
     margin-right: 15px;
 }
 
+.row{
+    margin-top: 100px;
+}
 
 .nav-item {
     font-size: 25px;
@@ -252,6 +255,10 @@ h1 {
     padding-left: 70px;
     padding-right: 70px;
     padding-bottom: 20px;
+}
+
+.btn-login{
+    display: flex;
 }
 
 
