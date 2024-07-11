@@ -2,38 +2,7 @@
 
 @section('content')
 <style>
-    body {
-        overflow: hidden;
-    }
-    .carousel-item img {
-        height: 500px;
-        object-fit: cover;
-    }
-    #feedback {
-        position: absolute;
-        bottom: 20px;
-        right: 20px;
-    }
-    #feedback img {
-        width: 20px;
-        height: 20px;
-        margin-right: 5px;
-    }
 
-    .h1-pri {
-        text-align: center;
-        margin: 0;
-    }
-    .container-heading {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 80px;
-        width: 100%;
-        max-width: 400px;
-        border-radius: 20px;
-        background-color: #fff9e3;
-    }
 </style>
 <div class="container mt-5">
     <div class="container-heading">

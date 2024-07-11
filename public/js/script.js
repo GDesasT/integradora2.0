@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     var now = new Date();
-    var hours = now.getHours();
+    var hours = 12;
     var text = document.getElementById('desayunos');
 
     if (hours >= 12) {
