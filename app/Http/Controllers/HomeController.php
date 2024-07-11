@@ -25,4 +25,10 @@ class HomeController extends Controller
     {
         return view('feedback');
     }
+
+    public function venta()
+    {
+        return view('venta');
+    }
+
 }
