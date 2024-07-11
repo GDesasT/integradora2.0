@@ -3,9 +3,7 @@
 @section('content')
 
 {{-- <style>
-    body{
-        overflow: hidden;
-    }
+
 </style> --}}
 
     <body>
