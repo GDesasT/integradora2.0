@@ -16,12 +16,13 @@
                 <li class="nav-item">
                     <a class="nav-link <?php echo e(request()->routeIs('menu') ? 'active' : ''); ?>" href="<?php echo e(route('menu')); ?>">Menu</a>
                 </li>
-
+        </button>
+            
             </ul>
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item" id=navlogin>
-                    
-                    <a class="btn-login <?php echo e(request()->routeIs('login') ? 'active' : ''); ?>" href="<?php echo e(route('login')); ?>"><img src="../img/user.png" >Login</a>
+                    <img src="../img/user.png" ></button>
+                    <a class=" <?php echo e(request()->routeIs('login') ? 'active' : ''); ?>" href="<?php echo e(route('login')); ?>">Login</a>
                 </li>
             </ul>
         </div>

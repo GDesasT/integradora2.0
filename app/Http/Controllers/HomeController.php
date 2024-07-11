@@ -15,12 +15,7 @@ class HomeController extends Controller
     {
         return view('menu');
     }
-
-    public function login()
-    {
-        return view('login');
-    }
-
+    
     public function feedback()
     {
         return view('feedback');
