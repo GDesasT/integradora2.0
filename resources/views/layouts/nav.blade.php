@@ -16,9 +16,8 @@
                 <li class="nav-item">
                     <a class="nav-link {{ request()->routeIs('menu') ? 'active' : '' }}" href="{{ route('menu') }}">Menu</a>
                 </li>
-             
         </button>
-
+            {{-- hola --}}
             </ul>
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item" id=navlogin>
