@@ -16,5 +16,15 @@
 
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <script src="{{ asset('js/app.js') }}"></script>
+    
 </body>
 </html>
+<style>
+    @font-face{
+        font-family:'montserrat';
+        src:url('font/montserrat.ttf');
+
+    }
+
+
+</style>

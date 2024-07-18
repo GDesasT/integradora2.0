@@ -13,6 +13,6 @@ Route::get('/login', [UserController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [UserController::class, 'login'])->name('login.submit');
 Route::get('/logout', [UserController::class, 'logout'])->name('logout');
 
-Route::middleware('auth')->group(function () {
+// Route::middleware('auth')->group(function () {
     Route::get('/inventory', [HomeController::class, 'inventory'])->name('inventory');
-});
+// });

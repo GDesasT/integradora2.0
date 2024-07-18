@@ -9,7 +9,7 @@
                 <img src="{{ asset('img/logo.jpeg') }}" class="h-64 rounded-full" alt="Logo Comedor Industrial">
             </div>
             <div class="md:w-1/2 sm:w-auto bg-black bg-opacity-40 rounded-2xl p-5 m-10">
-                <h1 class="text-3xl font-bold text-center text-white">Comedor Industrial</h1>
+                <h1 class="text-3xl font-bold text-center text-white">Comedor Industrial </h1>
                 <p class="mt-4  text-gray-300 text-justify leading-relaxed">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores sapiente, ipsum, recusandae ab itaque eaque esse blanditiis quo ut fugiat expedita reiciendis iure ipsa molestiae minus porro dolorum exercitationem qui beatae facilis cumque id facere. Modi debitis rerum consequuntur doloremque deleniti tempora praesentium velit? Adipisci nobis obcaecati, iure earum qui officia a minima at hic pariatur explicabo nulla nisi sed quis autem tenetur itaque, non ex unde perspiciatis odit. Cum architecto saepe adipisci ullam laudantium neque officiis asperiores odit praesentium.</p>
             </div>
         </div>
