@@ -28,4 +28,7 @@ class HomeController extends Controller
     public function pointofsale(){
         return view('PointOfSale');
     }
+    public function recipes(){
+        return view('recipes');
+    }
 }
